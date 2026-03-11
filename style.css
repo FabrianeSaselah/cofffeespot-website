@@ -1,0 +1,181 @@
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   background: #5f2a0bd2;
+}
+
+/* HEADER */
+
+header {
+   background: #6F4E37;
+   color: white;
+   padding: 15px 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+nav a {
+   color: white;
+   margin-left: 20px;
+   text-decoration: none;
+   font-weight: 500;
+}
+
+nav a:hover {
+   text-decoration: underline;
+}
+
+/* HERO */
+
+.hero {
+   text-align: center;
+   padding: 100px 20px;
+   background: #F5F5DC;
+}
+
+.btn {
+   background: #6F4E37;
+   color: white;
+   padding: 10px 20px;
+   text-decoration: none;
+   border-radius: 5px;
+}
+
+/* TITLE */
+
+.section-title {
+   text-align: center;
+   font-size: 30px;
+   color: white;
+   margin-top: 40px;
+}
+
+/* COFFEE GRID */
+
+.coffee-list {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 25px;
+   padding: 40px;
+   max-width: 1200px;
+   margin: auto;
+}
+
+.card {
+   background: #3b1d0f;
+   border-radius: 12px;
+   overflow: hidden;
+   text-align: center;
+   transition: 0.3s;
+}
+
+.card img {
+   width: 100%;
+   height: 180px;
+   object-fit: cover;
+}
+
+.card h3 {
+   color: white;
+   margin: 10px 0;
+}
+
+.card p {
+   color: #ddd;
+   font-size: 14px;
+   padding: 0 15px 20px;
+}
+
+.card:hover {
+   transform: translateY(-8px);
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.logo img {
+   width: 40px;
+   height: 40px;
+}
+
+/* FOOTER */
+
+footer {
+   background: #c5a373;
+   color: white;
+   text-align: center;
+   padding: 15px;
+   margin-top: 40px;
+}
+
+.detail {
+   max-width: 900px;
+   margin: auto;
+   padding: 40px;
+   color: white;
+   text-align: center;
+}
+
+.tiktok-embed {
+   margin: 30px auto;
+}
+
+.detail-img {
+   width: 100%;
+   border-radius: 10px;
+   margin-bottom: 20px;
+}
+
+.rating {
+   font-size: 22px;
+   margin: 10px 0 20px 0;
+   color: gold;
+}
+
+.detail ul {
+   line-height: 1.8;
+}
+
+.video-detail {
+   width: 70%;
+   max-width: 500px;
+   display: block;
+   margin: 10px auto;
+   border-radius: 10px;
+}
+
+/* TABLET */
+
+@media (max-width:1024px) {
+   .coffee-list {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+/* MOBILE */
+
+@media (max-width:600px) {
+
+   header {
+      flex-direction: column;
+      text-align: center;
+   }
+
+   nav {
+      margin-top: 10px;
+   }
+
+   .coffee-list {
+      grid-template-columns: 1fr;
+      padding: 20px;
+   }
+
+   .hero {
+      padding: 60px 20px;
+   }
+
+}
